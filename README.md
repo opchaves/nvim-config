@@ -101,6 +101,7 @@ Configured formatter:
 - `lua/config/autocmds.lua` autocommands
 - `lua/plugins/*.lua` plugin specs/config
 - `lazy-lock.json` pinned plugin versions
+- `KEYMAPS.md` custom keymap reference
 - `AGENTS.md` instructions for coding agents
 
 ## Useful Commands

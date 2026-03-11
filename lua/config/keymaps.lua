@@ -16,6 +16,10 @@ map("n", "<leader>bo", function()
   end
 end, { desc = "Delete other buffers" })
 map("n", "<leader>ba", "<cmd>%bdelete|edit#|bdelete#<cr>", { desc = "Delete all buffers" })
+map("n", "<leader>e", vim.diagnostic.open_float, { desc = "Show diagnostics" })
+map("n", "<leader>dn", vim.diagnostic.goto_next, { desc = "Next diagnostic" })
+map("n", "<leader>dp", vim.diagnostic.goto_prev, { desc = "Previous diagnostic" })
+map("n", "<leader>dl", vim.diagnostic.setloclist, { desc = "Diagnostics to loclist" })
 
 map("n", "<leader>ff", "<cmd>Telescope find_files<cr>", { desc = "Find files" })
 map("n", "<leader>fg", "<cmd>Telescope live_grep<cr>", { desc = "Live grep" })
