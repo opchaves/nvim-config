@@ -2,7 +2,11 @@ return {
   {
     "williamboman/mason.nvim",
     cmd = { "Mason", "MasonInstall" },
-    opts = {},
+    opts = {
+      ensure_installed = {
+        "prettier",
+      },
+    },
   },
   {
     "williamboman/mason-lspconfig.nvim",
