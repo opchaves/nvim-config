@@ -49,35 +49,37 @@ nvim --headless "+Lazy! sync" +qa
 
 ## Keymaps
 
-Core:
+Global keymaps:
 
-- `,w` save file
-- `,q` quit window
-- `,h` clear search highlight
+| Mode | Key | Description |
+| --- | --- | --- |
+| `n` | `,w` | Save file |
+| `n` | `,q` | Quit window |
+| `n` | `,h` | Clear search highlight |
+| `n` | `,bd` | Delete current buffer |
+| `n` | `,bn` | Go to next buffer |
+| `n` | `,bp` | Go to previous buffer |
+| `n` | `,bo` | Delete all buffers except current |
+| `n` | `,ba` | Delete all buffers |
+| `n` | `,e` | Show diagnostics under cursor |
+| `n` | `,dn` | Go to next diagnostic |
+| `n` | `,dp` | Go to previous diagnostic |
+| `n` | `,dl` | Put diagnostics in location list |
+| `n` | `,ff` | Telescope: find files |
+| `n` | `,fg` | Telescope: live grep |
+| `n` | `,fb` | Telescope: list buffers |
+| `n` | `,fh` | Telescope: help tags |
+| `n` | `,f` | Format current buffer |
 
-Telescope:
+LSP buffer-local keymaps (active when an LSP server attaches):
 
-- `,ff` find files
-- `,fg` live grep
-- `,fb` list buffers
-- `,fh` help tags
-
-Formatting:
-
-- `,f` format current buffer
-
-LSP (buffer-local when server attaches):
-
-- `gd` go to definition
-- `gr` go to references
-- `K` hover docs
-- `,rn` rename symbol
-- `,ca` code action
-
-Buffer navigation:
-
-- Existing mappings like `[b` and `]b` are preserved
-- Bufferline provides the top bar UI for open buffers
+| Mode | Key | Description |
+| --- | --- | --- |
+| `n` | `gd` | Go to definition |
+| `n` | `gr` | Go to references |
+| `n` | `K` | Hover docs |
+| `n` | `,rn` | Rename symbol |
+| `n,v` | `,ca` | Code action |
 
 ## Language Tooling
 
@@ -101,7 +103,6 @@ Configured formatter:
 - `lua/config/autocmds.lua` autocommands
 - `lua/plugins/*.lua` plugin specs/config
 - `lazy-lock.json` pinned plugin versions
-- `KEYMAPS.md` custom keymap reference
 - `AGENTS.md` instructions for coding agents
 
 ## Useful Commands
