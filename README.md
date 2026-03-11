@@ -132,8 +132,16 @@ Lua syntax check:
 find . -name "*.lua" -print0 | xargs -0 -n1 luac -p
 ```
 
+Format Lua (optional):
+
+```bash
+stylua .
+```
+
 ## Notes
 
 - LSP config supports Neovim 0.11 API (`vim.lsp.config/enable`) with 0.10 fallback.
 - `lazy-lock.json` should be committed whenever plugin versions change.
 - Keep plugin specs modular: one concern per file in `lua/plugins/`.
+- `.editorconfig` defines consistent whitespace, line endings, and indentation defaults.
+- `stylua.toml` pins Lua formatting behavior for consistent code style.
