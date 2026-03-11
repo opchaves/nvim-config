@@ -7,6 +7,7 @@ Personal Neovim configuration focused on a fast JavaScript/TypeScript web workfl
 - Plugin management with `lazy.nvim`
 - LSP setup via `mason.nvim` + `mason-lspconfig.nvim`
 - Completion via `nvim-cmp` + LuaSnip
+- AI suggestions via GitHub Copilot (`copilot.lua`)
 - Formatting via `conform.nvim` + Prettier
 - Fuzzy finding via Telescope
 - Syntax/indent via Treesitter
@@ -70,6 +71,13 @@ Global keymaps:
 | `n` | `,fb` | Telescope: list buffers |
 | `n` | `,fh` | Telescope: help tags |
 | `n` | `,f` | Format current buffer |
+
+Copilot suggestion keymaps (insert mode):
+
+| Mode | Key | Description |
+| --- | --- | --- |
+| `i` | `Ctrl-j` | Accept Copilot suggestion |
+| `i` | `Ctrl-]` | Dismiss Copilot suggestion |
 
 LSP buffer-local keymaps (active when an LSP server attaches):
 
