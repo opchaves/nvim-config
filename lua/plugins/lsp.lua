@@ -23,7 +23,7 @@ return {
 
       mason_lspconfig.setup({
         ensure_installed = {
-          "ts_ls",
+          "vtsls",
           "eslint",
           "html",
           "cssls",
@@ -44,7 +44,7 @@ return {
       end
 
       local servers = {
-        ts_ls = {},
+        vtsls = {},
         eslint = {},
         html = {},
         cssls = {},

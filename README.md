@@ -83,7 +83,7 @@ Buffer navigation:
 
 Configured LSP servers:
 
-- `ts_ls`
+- `vtsls`
 - `eslint`
 - `html`
 - `cssls`
@@ -115,7 +115,7 @@ nvim --headless "+Lazy! update" +qa
 Install Mason tools:
 
 ```bash
-nvim --headless "+MasonInstall ts_ls eslint html cssls jsonls prettier" +qa
+nvim --headless "+MasonInstall vtsls eslint html cssls jsonls prettier" +qa
 ```
 
 Health checks:
