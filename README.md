@@ -11,6 +11,7 @@ Personal Neovim configuration focused on a fast JavaScript/TypeScript web workfl
 - Formatting via `conform.nvim` + Prettier
 - Fuzzy finding via Telescope
 - Syntax/indent via Treesitter
+- Git signs/blame/hunks via Gitsigns
 - Symbol outline via Aerial
 - Buffer UI via Bufferline
 - Theme: Tokyo Night (`tokyonight-night`)
@@ -81,6 +82,17 @@ Copilot suggestion keymaps (insert mode):
 | --- | --- | --- |
 | `i` | `Ctrl-j` | Accept Copilot suggestion |
 | `i` | `Ctrl-]` | Dismiss Copilot suggestion |
+
+Gitsigns buffer-local keymaps (active in git-tracked buffers):
+
+| Mode | Key | Description |
+| --- | --- | --- |
+| `n` | `]h` | Next hunk |
+| `n` | `[h` | Previous hunk |
+| `n` | `,gs` | Stage hunk |
+| `n` | `,gr` | Reset hunk |
+| `n` | `,gh` | Preview hunk diff |
+| `n` | `,gb` | Toggle inline blame |
 
 Aerial buffer-local keymaps (active when the outline panel is open):
 
