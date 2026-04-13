@@ -11,6 +11,7 @@ Personal Neovim configuration focused on a fast JavaScript/TypeScript web workfl
 - Formatting via `conform.nvim` + Prettier
 - Fuzzy finding via Telescope
 - Syntax/indent via Treesitter
+- Symbol outline via Aerial
 - Buffer UI via Bufferline
 - Theme: Tokyo Night (`tokyonight-night`)
 
@@ -66,6 +67,8 @@ Global keymaps:
 | `n` | `,dn` | Go to next diagnostic |
 | `n` | `,dp` | Go to previous diagnostic |
 | `n` | `,dl` | Put diagnostics in location list |
+| `n` | `,a` | Toggle symbol outline (Aerial) |
+| `n` | `,fa` | Telescope: find symbols (Aerial) |
 | `n` | `,ff` | Telescope: find files |
 | `n` | `,fg` | Telescope: live grep |
 | `n` | `,fb` | Telescope: list buffers |
@@ -78,6 +81,13 @@ Copilot suggestion keymaps (insert mode):
 | --- | --- | --- |
 | `i` | `Ctrl-j` | Accept Copilot suggestion |
 | `i` | `Ctrl-]` | Dismiss Copilot suggestion |
+
+Aerial buffer-local keymaps (active when the outline panel is open):
+
+| Mode | Key | Description |
+| --- | --- | --- |
+| `n` | `{` | Previous symbol |
+| `n` | `}` | Next symbol |
 
 LSP buffer-local keymaps (active when an LSP server attaches):
 
