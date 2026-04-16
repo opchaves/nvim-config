@@ -8,12 +8,18 @@ return {
   },
   cmd = "Neotree",
   keys = {
-    { "<leader>fe", "<cmd>Neotree toggle left<cr>", desc = "Toggle file tree" },
+    { "<leader>fe", "<cmd>Neotree focus left<cr>", desc = "Focus file tree" },
+    { "<leader>fE", "<cmd>Neotree toggle left<cr>", desc = "Toggle file tree" },
   },
   opts = {
     window = {
       position = "left",
       width = 30,
+      mappings = {
+        ["<leader>fe"] = function()
+          vim.cmd("wincmd p")
+        end,
+      },
     },
     filesystem = {
       follow_current_file = { enabled = true },
